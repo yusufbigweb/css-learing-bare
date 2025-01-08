@@ -1,16 +1,91 @@
-body {
-  height: 1000vh;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.box-first {
-  border: 2px solid;
+/* Margin and Padding
+
+/* Margin using to outside box and container */
+
+/* .box-zero {
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+} */
+
+/* top, bottom, left, right margin and padding apply */
+
+/* .box-first {
+  height: 150px;
+  margin: 20px;
+  padding: 20px;
+  width: 150px;
+
+  background-color: aquamarine;
+  text-align: center;
+} */
+
+/* Inline and inline-block and block */
+/* .a {
+  display: inline;
   height: 100px;
   width: 100px;
+  background-color: brown;
 }
+
+.b {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: brown;
+}
+.c {
+  display: block;
+  height: 100px;
+  width: 100px;
+  background-color: brown;
+} */
+
+/* Position static, relative, adsolute, fixed, sticky */
+
 .container {
-  position: sticky;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.box {
+  height: 100px;
+  width: 200px;
+  background-color: red;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Static positioned elements are not affected by the top, bottom, left, and right properties. */
+/* HTML elements are positioned static by default. */
+
+.box-static {
+  position: static;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: aqua;
+  left: 40%;
+  right: 60%;
+  bottom: 40%;
+}
+
+/* An element with position: relative; is positioned relative to its normal position. */
+
+.box-relative {
+  position: relative;
+  left: 30%;
 }
